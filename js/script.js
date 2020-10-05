@@ -10481,6 +10481,11 @@ var testimonialsSwiper = new Swiper('.testimonials__container', {
     prevEl: '.testimonials__arrow_left'
   }
 });
+document.querySelectorAll('[data-bar]').forEach(function (item) {
+  return new SimpleBar(item, {
+    autoHide: false
+  });
+});
 ;
 var awardsSwiper = new Swiper('.trusts__container', {
   direction: 'horizontal',
